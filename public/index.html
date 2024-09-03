@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ping URL</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="text-center mb-4">
+      <h1>URL Monitoring</h1>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Ping URL</h3>
+        <div class="form-group">
+          <input type="text" id="urlInput" class="form-control" placeholder="Enter URL to ping">
+        </div>
+        <button class="btn btn-primary" onclick="pingUrl()">Ping URL</button>
+        <button class="btn btn-primary" onclick="exportResults()">Export Results</button>
+      </div>
+    </div>
+    <table class="table mt-4">
+      <thead>
+        <tr>
+          <th>URL</th>
+          <th>Status</th>
+          <th>Response Time</th>
+          <th>Last Refreshed Time</th>
+        </tr>
+      </thead>
+      <tbody id="resultsTable">
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
